@@ -1,3 +1,55 @@
-section {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4b6bfb;
+  --primary-focus: #405bd5;
+  --primary-content: #ffffff;
+  --secondary: #696a75;
+  --secondary-focus: #3b3c4a;
+  --secondary-content: #ffffff;
+  --martinique: #3d3757;
+  --martinique-focus: #292534;
+  --accent-content: #ffffff;
+  --tanhide: #f59253;
+  --tanhide-focus: #c16d3c;
+  --santasgrey: #9b9bb4;
+  --santasgrey-focus: #727287;
+  --santasgrey-focus-2: #695f8f;
+  --greychateau: #9ca4ac;
+  --greychateau-focus: ;
+  --neutral: #181a2a;
+  --neutral-focus: #141624;
+  --neutral-content: #ffffff;
+  --base-100: #ffffff;
+  --base-200: #f6f6f7;
+  --base-300: #e8e8ea;
+  --base-content: #131313;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--base-content);
+}
+
+/* section {
   min-height: 100vh;
+} */
+
+main {
+  margin: 2rem auto 2rem auto;
+  border: solid red;
+}
+
+/* Media Queries Breakpoints */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
 }

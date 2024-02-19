@@ -1,0 +1,39 @@
+.search-label {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .search-label {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+  #search {
+    border-radius: 0.3rem;
+    border: 2px solid var(--tanhide);
+    text-indent: 0.5rem;
+    outline: none;
+    height: 2rem;
+  }
+  #search:focus {
+    font-size: 1rem;
+    outline: var(--tanhide-focus);
+  }
+  .search-btn {
+    background-color: var(--tanhide);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.3rem;
+    border: none;
+    position: absolute;
+    & i {
+      color: var(--martinique);
+      cursor: pointer;
+    }
+  }
+  .search-btn:hover {
+    background-color: var(--tanhide-focus);
+  }
+  ::placeholder {
+    color: var(--martinique);
+  }
+}

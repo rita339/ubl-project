@@ -1,0 +1,103 @@
+.Sidebar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 60%;
+  padding-top: 3.5rem;
+  background-color: var(--tanhide);
+  & .fa-xmark {
+    cursor: pointer;
+    color: var(--base-100);
+    font-size: 1.6rem;
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    &:hover {
+      color: var(--base-200);
+    }
+  }
+
+  & .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    text-decoration: none;
+    padding: 2.5rem 1.5rem 0;
+    color: var(--base-100);
+    font-size: 1.15rem;
+    font-weight: 500;
+  }
+  &:hover {
+    background-color: var(--base-200);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  & .fa-house,
+  .fa-bell,
+  .fa-book,
+  .fa-envelope {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  & p {
+    color: var(--martinique);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Sidebar {
+    width: 50%;
+    & .fa-xmark {
+      font-size: 2rem;
+    }
+    & .nav-link {
+      font-size: 1.3rem;
+    }
+    & .fa-house,
+    .fa-bell,
+    .fa-book,
+    .fa-envelope {
+      font-size: 1.8rem;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Sidebar {
+    position: static;
+    justify-content: flex-end;
+    height: auto;
+    width: 70%;
+    flex-direction: row;
+    padding-top: 0;
+    background-color: var(--base-100);
+    & .fa-xmark {
+      display: none;
+    }
+    & .nav-link {
+      padding: 0.5rem 1rem;
+      color: var(--base-content);
+      font-size: 1.2rem;
+      font-weight: 600;
+      & i {
+        display: none;
+      }
+    }
+    .nav-link p:hover {
+      color: var(--tanhide);
+    }
+  }
+  .Sidebar:hover {
+    background-color: var(--base-100);
+    text-decoration: none;
+  }
+}

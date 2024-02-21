@@ -23,6 +23,7 @@ export const Sidebar = ({ isActive, setIsActive }) => {
         <NavLink
           to="/aktuelles"
           className="nav-link"
+          // id="nav-link-mq"
           onClick={() => setIsActive(!isActive)}
         >
           <i className="fa-solid fa-bell"></i>
@@ -43,7 +44,7 @@ export const Sidebar = ({ isActive, setIsActive }) => {
           className="nav-link"
           onClick={() => setIsActive(!isActive)}
         >
-          <i className="fa-solid fa-users"></i>
+          <i className="fa-solid fa-user"></i>
           <p>Mitglieder</p>
         </NavLink>
 

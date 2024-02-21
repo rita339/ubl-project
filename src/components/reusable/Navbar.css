@@ -8,6 +8,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0px 8px 12px #091e4226, 0px 0px 1px #091e424f;
+  /* box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.1); */
   & .img-logo {
     padding-top: 1rem;
     & img {
@@ -24,6 +26,14 @@
     }
   }
 }
+
+/* @media screen and (min-width: 768px) {
+  .Navbar {
+    & .nav-link p {
+      font-size: 1.3rem;
+    }
+  }
+} */
 
 @media screen and (min-width: 992px) {
   .Navbar {

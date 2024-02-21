@@ -9,6 +9,9 @@
   width: 60%;
   padding-top: 3.5rem;
   background-color: var(--tanhide);
+  /* background: linear-gradient(to right, #22466e 0%, #1f61aa 100%); */
+  background: linear-gradient(to right, #727287 0%, #9b9bb4 100%);
+
   & .fa-xmark {
     cursor: pointer;
     color: var(--base-100);
@@ -17,7 +20,7 @@
     right: 2rem;
     top: 1.5rem;
     &:hover {
-      color: var(--base-200);
+      color: var(--tanhide);
     }
   }
 
@@ -27,19 +30,22 @@
     justify-content: flex-start;
     gap: 1.2rem;
     text-decoration: none;
-    padding: 2.5rem 1.5rem 0;
     color: var(--base-100);
+    padding: 2.5rem 1.5rem 0;
     font-size: 1.15rem;
     font-weight: 500;
-  }
-  &:hover {
-    background-color: var(--base-200);
-    text-decoration: underline;
-    cursor: pointer;
+    & p {
+      color: var(--base-100);
+    }
+    &:hover,
+    p:hover {
+      color: var(--tanhide);
+    }
   }
 
   & .fa-house,
   .fa-bell,
+  .fa-user,
   .fa-book,
   .fa-envelope {
     font-size: 1.5rem;
@@ -61,6 +67,7 @@
       font-size: 1.3rem;
     }
     & .fa-house,
+    .fa-user,
     .fa-bell,
     .fa-book,
     .fa-envelope {
@@ -79,15 +86,17 @@
     width: 70%;
     flex-direction: row;
     padding-top: 0;
-    background-color: var(--base-100);
+    background: var(--base-100);
     & .fa-xmark {
       display: none;
     }
     & .nav-link {
       padding: 0.5rem 1rem;
-      color: var(--base-content);
       font-size: 1.2rem;
       font-weight: 600;
+      & p {
+        color: var(--martinique);
+      }
       & i {
         display: none;
       }

@@ -8,6 +8,8 @@ import { Aktuelles } from "./components/Aktuelles.jsx";
 import { Kontakt } from "./components/Kontakt.jsx";
 import { Programm } from "./components/Programm.jsx";
 import { Mitglieder } from "./components/Mitglieder.jsx";
+import { Datenschutz } from "./components/reusable/Datenschutz.jsx";
+import { Impressum } from "./components/reusable/Impressum.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "kontakt",
         element: <Kontakt />,
+      },
+      {
+        path: "datenschutz",
+        element: <Datenschutz />,
+      },
+      {
+        path: "impressum",
+        element: <Impressum />,
       },
     ],
   },

@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import Antragsformular from "/Antragsformular.pdf";
-import Satzung from "/Satzung_UBL.pdf";
-
 // import { Kontakt } from "../Kontakt.jsx";
+
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
@@ -13,20 +11,26 @@ export const Footer = () => {
         <h5>Mitglied werden:</h5>
         <li>
           <i className="fa-solid fa-check-double"></i>
-          <a href={Satzung} target="_blank" rel="noreferrer">
+          <a href="/Satzung_UBL.pdf" target="_blank" rel="noreferrer">
             Satzung
           </a>
         </li>
         <li>
           <i className="fa-solid fa-check-double"></i>
-          <a href={Antragsformular} target="_blank" rel="noreferrer">
+          <a href="/Antragsformular.pdf" target="_blank" rel="noreferrer">
             Mitgliedsantrag
+          </a>
+        </li>
+        <li>
+          <i className="fa-solid fa-check-double"></i>
+          <a href="#" target="_blank" rel="noreferrer">
+            Anträge / Anfragen
           </a>
         </li>
       </ul>
 
       <ul>
-        <h5>Zusammenarbeit mit Einrichtungen:</h5>
+        <h5>Unsere Zusammenarbeit:</h5>
         <li>
           <i className="fa-solid fa-check-double"></i>
           <a

@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--base-100);
-  padding: 0 1rem;
+  padding: 0 1.7rem;
   height: 7.5rem;
   position: sticky;
   top: 0;
@@ -27,17 +27,14 @@
   }
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .Navbar {
-    & .nav-link p {
-      font-size: 1.3rem;
-    }
+    padding: 0 2.2rem;
   }
-} */
+}
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .Navbar {
-    max-width: 100%;
     .fa-bars {
       display: none;
     }

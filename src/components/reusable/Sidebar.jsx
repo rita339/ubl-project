@@ -16,46 +16,50 @@ export const Sidebar = ({ isActive, setIsActive }) => {
           className="nav-link"
           onClick={() => setIsActive(!isActive)}
         >
-          <i className="fa-solid fa-house "></i>
+          <i className="fa-solid fa-check-double"></i>
           <p>Home</p>
         </NavLink>
+        <li className="divider"></li>
 
         <NavLink
           to="/aktuelles"
           className="nav-link"
-          // id="nav-link-mq"
           onClick={() => setIsActive(!isActive)}
         >
-          <i className="fa-solid fa-bell"></i>
+          <i className="fa-solid fa-check-double"></i>
           <p>Aktuelles</p>
         </NavLink>
+        <li className="divider"></li>
 
         <NavLink
           to="/programm"
           className="nav-link"
           onClick={() => setIsActive(!isActive)}
         >
-          <i className="fa-solid fa-book"></i>
+          <i className="fa-solid fa-check-double"></i>
           <p>Programm</p>
         </NavLink>
+        <li className="divider"></li>
 
         <NavLink
           to="/mitglieder"
           className="nav-link"
           onClick={() => setIsActive(!isActive)}
         >
-          <i className="fa-solid fa-user"></i>
+          <i className="fa-solid fa-check-double"></i>
           <p>Mitglieder</p>
         </NavLink>
+        <li className="divider"></li>
 
         <NavLink
           to="/kontakt"
           className="nav-link"
           onClick={() => setIsActive(!isActive)}
         >
-          <i className="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-check-double"></i>
           <p>Kontakt</p>
         </NavLink>
+        <li className="divider"></li>
       </ul>
       <Header />
     </>

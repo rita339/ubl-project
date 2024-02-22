@@ -37,15 +37,40 @@ body {
 
 main {
   margin: 2rem auto 2rem auto;
-  border: solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Media Queries Breakpoints */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  main {
+    margin: 3rem auto 3rem auto;
+  }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 992px) {
+  main {
+    margin: 4rem auto 4rem auto;
+  }
 }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
+  main {
+    margin: 4rem auto 4rem auto;
+    & section {
+      width: 74%;
+    }
+  }
 }
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
+  main {
+    margin: 5rem auto 5rem auto;
+    & section {
+      width: 71%;
+    }
+  }
 }

@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Logoimage from "/Logo_UBL.png";
 import { Sidebar } from "./Sidebar.jsx";
 import { useEffect, useState } from "react";
 
@@ -10,7 +9,7 @@ export const Navbar = () => {
   useEffect(() => {
     const handleResize = () => {
       // window als Teil des Browser-Objektmodells (BOM), um auf bestimmte Browserfunktionen zuzugreifen.
-      setIsActive(window.innerWidth >= 992);
+      setIsActive(window.innerWidth >= 1200);
     };
 
     handleResize(); // Initialisierung beim Laden der Komponente
@@ -27,7 +26,7 @@ export const Navbar = () => {
     <>
       <nav className="Navbar">
         <NavLink to="/" className="img-logo">
-          <img src={Logoimage} alt="Logo_UBL" />
+          <img src="/Logo_UBL.png" alt="Logo_UBL" />
         </NavLink>
         <i className="fa-solid fa-bars" onClick={() => setIsActive(true)}></i>
         {isActive && <Sidebar isActive={isActive} setIsActive={setIsActive} />}

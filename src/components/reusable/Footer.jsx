@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
-// import { Kontakt } from "../Kontakt.jsx";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="Footer">
-      {/* <Kontakt /> */}
       <ul>
         <h5>Mitglied werden:</h5>
         <li>

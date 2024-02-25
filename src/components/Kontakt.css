@@ -1,0 +1,111 @@
+.Kontakt {
+  color: var(--martinique);
+  & h1 {
+    font-size: 2.4rem;
+    padding-left: 1rem;
+    font-weight: 800;
+    padding: 1rem;
+    letter-spacing: 0.02rem;
+  }
+  & .kontakt-header {
+    margin-bottom: 2.575rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.5;
+    & h4,
+    h2 {
+      color: #554e78;
+    }
+    & p {
+      color: #59517e;
+    }
+    & a {
+      color: var(--tanhide);
+      text-decoration: none;
+      &:hover {
+        color: var(--tanhide-focus);
+      }
+    }
+  }
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    & input {
+      width: 100%;
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      padding: 0.75rem;
+      border: 2px solid #59517e;
+
+      &::placeholder {
+        color: var(--greychateau);
+      }
+      &:focus {
+        outline: var(--tanhide-focus);
+        border: 2px solid var(--tanhide);
+      }
+    }
+    & textarea {
+      border: 2px solid #59517e;
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      padding: 0.75rem;
+      &::placeholder {
+        color: var(--greychateau);
+      }
+      &:focus {
+        outline: var(--tanhide-focus);
+        border: 2px solid var(--tanhide);
+      }
+    }
+
+    & label {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      gap: 1rem;
+      & #agreement {
+        height: 1rem;
+        width: 1rem;
+      }
+      & p {
+        letter-spacing: 0.02rem;
+        color: #59517e;
+
+        & a {
+          text-decoration: none;
+          color: var(--tanhide);
+          &:hover {
+            color: var(--tanhide-focus);
+          }
+        }
+      }
+    }
+    & .kontakt-btn {
+      & button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        cursor: pointer;
+        padding: 0.375rem 0.375rem 0.375rem 1.5rem;
+        border-radius: 3.5rem;
+        color: var(--martinique);
+        background-color: var(--tanhide);
+        & i {
+          background-color: var(--martinique);
+          border-radius: 2.5rem;
+          font-size: 1.3rem;
+          padding: 0.625rem;
+          color: var(--tanhide);
+        }
+        &:hover {
+          background-color: var(--tanhide-focus);
+        }
+      }
+    }
+  }
+}

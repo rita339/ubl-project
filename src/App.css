@@ -48,11 +48,11 @@ section {
 }
 
 /* p{
-  color: ;
+  color: #59517e;
 } */
 
 /* h1, h2, h4{
-  color: ;
+  color: #554e78;
 } */
 
 /* Media Queries Breakpoints */
@@ -63,7 +63,7 @@ section {
 }
 @media screen and (min-width: 992px) {
   main {
-    margin: 4rem auto 5rem auto;
+    margin: 4rem auto 4rem auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -73,7 +73,7 @@ section {
 }
 @media screen and (min-width: 1920px) {
   main {
-    margin: 5rem auto 6rem auto;
+    margin: 5rem auto 5rem auto;
     & section {
       width: 71%;
     }

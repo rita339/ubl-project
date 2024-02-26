@@ -30,8 +30,8 @@
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
+    width: 100%;
     & input {
-      width: 100%;
       border-radius: 0.3rem;
       font-size: 1rem;
       padding: 0.75rem;
@@ -106,6 +106,17 @@
           background-color: var(--tanhide-focus);
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Kontakt {
+    display: flex;
+    justify-content: space-between;
+    & form {
+      width: 50%;
+      padding: 1.875rem;
     }
   }
 }

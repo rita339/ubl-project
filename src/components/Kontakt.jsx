@@ -5,12 +5,14 @@ export const Kontakt = () => {
   const email = "brunobarth@web.de";
   return (
     <section className="Kontakt">
-      <h1>Kontakt</h1>
-      <div className="kontakt-header">
-        <h4>UBL 2020 - Herzogenrath</h4>
-        <p>UBL Vorsitzender:</p>
-        <p>Bruno Barth</p>
-        <a href={`mailto:${email}`}>{email}</a>
+      <div>
+        <h1>Kontakt</h1>
+        <div className="kontakt-header">
+          <h4>UBL 2020 - Herzogenrath</h4>
+          <p>UBL Vorsitzender:</p>
+          <p>Bruno Barth</p>
+          <a href={`mailto:${email}`}>{email}</a>
+        </div>
       </div>
       <form>
         <h2>Senden Sie uns eine Nachricht:</h2>

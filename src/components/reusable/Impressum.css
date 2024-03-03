@@ -11,7 +11,7 @@
     color: #59517e;
   }
   & .impressum-group {
-    line-height: 2rem;
+    line-height: 1.7;
     margin-bottom: 0.938rem;
     letter-spacing: 0.02rem;
     & h3 {
@@ -43,10 +43,33 @@
 
 @media screen and (min-width: 992px) {
   .Impressum {
+    font-size: 1.2rem;
     & .impressum-group,
     .impressum-block,
     h4 {
       margin-bottom: 1.5rem;
+    }
+    & p,
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Impressum {
+    font-size: 1.3rem;
+    & p,
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .Impressum {
+    font-size: 1.5rem;
+    & h1 {
+      font-size: 3rem;
     }
   }
 }

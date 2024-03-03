@@ -2,16 +2,44 @@ import { Link } from "react-router-dom";
 import "./Kontakt.css";
 
 export const Kontakt = () => {
-  const email = "brunobarth@web.de";
+  const email = "Fraktion@UBL-Herzogenrath.de";
+  const tel = "0240683125";
   return (
     <section className="Kontakt">
       <div>
         <h1>Kontakt</h1>
-        <div className="kontakt-header">
-          <h4>UBL 2020 - Herzogenrath</h4>
-          <p>UBL Vorsitzender:</p>
-          <p>Bruno Barth</p>
-          <a href={`mailto:${email}`}>{email}</a>
+        <div className="kontakt-container">
+          <div className="kontakt-header">
+            <h4>UBL 2020 - Herzogenrath</h4>
+            <p>Fraktionsmitarbeiter:</p>
+            <p>Heinz Bekeschus</p>
+            <div className="kontakt-group">
+              <p>Tel.:</p>
+              <a href={`tel:${tel}`}>02406 / 83-125</a>
+            </div>
+            <div className="kontakt-group">
+              <p>Email: </p>
+              <a href={`mailto:${email}`}>{email}</a>
+            </div>
+          </div>
+
+          <div className="kontakt-header">
+            <h4>Unsere Sprechzeiten:</h4>
+            <ul className="sprechzeiten">
+              <div>
+                <li>Montag:</li>
+                <span>17.00 - 18.00 Uhr</span>
+              </div>
+              <div>
+                <li>Dienstag:</li>
+                <span>10.00 - 13.00 Uhr</span>
+              </div>
+              <div>
+                <li>Donnerstag:</li>
+                <span>10.00 - 13.00 Uhr</span>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
       <form>

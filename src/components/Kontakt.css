@@ -7,10 +7,33 @@
     padding: 1rem;
     letter-spacing: 0.02rem;
   }
+  & .kontakt-container {
+    display: flex;
+    justify-content: space-between;
+  }
   & .kontakt-header {
     margin-bottom: 2.575rem;
     letter-spacing: 0.02rem;
     line-height: 1.5;
+    & h4 {
+      margin-bottom: 1rem;
+    }
+    & .kontakt-group {
+      display: flex;
+      gap: 1rem;
+      & p {
+        width: 3rem;
+      }
+    }
+    & .sprechzeiten {
+      list-style-type: none;
+      & div {
+        display: flex;
+        & li {
+          width: 8rem;
+        }
+      }
+    }
     & h4,
     h2 {
       color: #554e78;
@@ -117,6 +140,14 @@
     & form {
       width: 50%;
       padding: 1.875rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Kontakt {
+    & .kontakt-container {
+      flex-direction: column;
     }
   }
 }

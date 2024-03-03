@@ -47,11 +47,13 @@ section {
   margin: 0 auto;
 }
 
-/* p{
-  color: #59517e;
-} */
+/* p {
+      letter-spacing: 0.02rem;
+}
 
-/* h1, h2, h4{
+h1,
+h2,
+h4 {
   color: #554e78;
 } */
 

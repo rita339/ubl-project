@@ -1,15 +1,14 @@
 .Impressum {
   color: var(--martinique);
   & h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding-left: 1rem;
     font-weight: 800;
-    padding: 1rem;
     letter-spacing: 0.02rem;
     margin-bottom: 1rem;
   }
   & .impressum-group {
-    line-height: 1.7;
+    line-height: 1.625;
     margin-bottom: 0.938rem;
     letter-spacing: 0.02rem;
     & .email-link-container {

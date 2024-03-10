@@ -5,12 +5,12 @@ export const Datenschutz = () => {
   const email = "brunobarth@web.de";
   const tel = "0240683125";
 
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // }, []);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   return (
     <section className="Datenschutz">

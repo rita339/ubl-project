@@ -1,7 +1,7 @@
 .Kontakt {
   color: var(--martinique);
   & h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding-left: 1rem;
     font-weight: 800;
     padding: 1rem;

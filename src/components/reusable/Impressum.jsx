@@ -1,8 +1,15 @@
+import { useEffect } from "react";
 import "./Impressum.css";
 
 export const Impressum = () => {
   const email = "brunobarth@web.de";
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="Impressum">
       <h1>Impressum</h1>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Kontakt.css";
 
 export const Kontakt = () => {
-  const email = "Fraktion@UBL-Herzogenrath.de";
+  const email = "fraktion@ubl-2020.de";
   const tel = "0240683125";
   return (
     <section className="Kontakt">

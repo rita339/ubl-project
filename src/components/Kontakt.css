@@ -9,7 +9,7 @@
   }
   & .kontakt-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
   & .kontakt-header {
     margin-bottom: 2.575rem;
@@ -29,6 +29,7 @@
       list-style-type: none;
       & div {
         display: flex;
+        color: #59517e;
         & li {
           width: 8rem;
         }
@@ -132,7 +133,14 @@
     }
   }
 }
-
+@media screen and (min-width: 768px) {
+  .Kontakt {
+    & .kontakt-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
 @media screen and (min-width: 992px) {
   .Kontakt {
     display: flex;

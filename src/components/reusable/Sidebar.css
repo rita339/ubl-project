@@ -125,8 +125,5 @@
 
 @media screen and (min-width: 1920px) {
   .Sidebar {
-    & .nav-link {
-      font-size: 1.5rem;
-    }
   }
 }

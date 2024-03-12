@@ -61,6 +61,7 @@
           font-size: 0.938rem;
           color: var(--base-100);
           line-height: 1.5;
+          text-align: center;
         }
       }
       &.cardFlip {
@@ -80,7 +81,7 @@
       flex-direction: row;
       justify-content: center;
       & .card {
-        width: 45%;
+        width: 35%;
       }
     }
   }
@@ -90,7 +91,7 @@
   .Mitglieder {
     & .flip-card-wrapper {
       & .card {
-        width: 30%;
+        width: 25%;
       }
     }
   }

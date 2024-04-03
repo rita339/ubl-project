@@ -23,14 +23,12 @@ export const Navbar = () => {
   }, []); // Abhängigkeitsarray leer, um das Abonnieren und Abbestellen des Event Listeners nur einmalig beim Laden der Komponente durchzuführen
 
   return (
-    <>
-      <nav className="Navbar">
-        <NavLink to="/" className="img-logo">
-          <img src="/Logo_UBL.png" alt="Logo_UBL" />
-        </NavLink>
-        <i className="fa-solid fa-bars" onClick={() => setIsActive(true)}></i>
-        {isActive && <Sidebar isActive={isActive} setIsActive={setIsActive} />}
-      </nav>
-    </>
+    <nav className="Navbar">
+      <NavLink to="/" className="img-logo">
+        <img src="/Logo_UBL.png" alt="Logo_UBL" />
+      </NavLink>
+      <i className="fa-solid fa-bars" onClick={() => setIsActive(true)}></i>
+      {isActive && <Sidebar isActive={isActive} setIsActive={setIsActive} />}
+    </nav>
   );
 };

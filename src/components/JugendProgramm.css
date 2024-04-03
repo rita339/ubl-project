@@ -1,5 +1,7 @@
 .JugendProgramm {
   color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
   & h1 {
     font-size: 2rem;
     padding-left: 1rem;
@@ -24,5 +26,30 @@
   }
   & p {
     line-height: 1.625;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .JugendProgramm {
+    margin: 3rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .JugendProgramm {
+    margin: 4rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .JugendProgramm {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .JugendProgramm {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
   }
 }

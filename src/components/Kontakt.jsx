@@ -77,7 +77,7 @@ export const Kontakt = () => {
         ></textarea>
 
         <label>
-          <input type="checkbox" name="agreement" id="agreement" />
+          <input type="checkbox" name="agreement" id="agreement" required />
           <p>
             Mit dem Absenden dieses Formulars wird der{" "}
             <Link to="/datenschutz">Datenschutzerklärung</Link> dieser Website

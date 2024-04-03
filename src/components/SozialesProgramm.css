@@ -1,5 +1,7 @@
 .SozialesProgramm {
   color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
   & h1 {
     font-size: 2rem;
     padding-left: 1rem;
@@ -28,5 +30,30 @@
     &::marker {
       color: var(--santasgrey);
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .SozialesProgramm {
+    margin: 3rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .SozialesProgramm {
+    margin: 4rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .SozialesProgramm {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .SozialesProgramm {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
   }
 }

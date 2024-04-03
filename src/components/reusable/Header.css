@@ -12,7 +12,7 @@
     border: 2px solid var(--tanhide);
     text-indent: 0.5rem;
     outline: none;
-    height: 2rem;
+    height: 1.8rem;
     width: 15rem;
   }
   #search:focus {
@@ -21,7 +21,7 @@
   }
   .search-btn {
     background-color: var(--tanhide);
-    height: 2rem;
+    height: 1.8rem;
     width: 2rem;
     border-radius: 0.3rem;
     border: none;
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+/* @media screen and (min-width: 1920px) {
   #search {
     width: 18rem;
     height: 2.375rem;
@@ -58,4 +58,4 @@
     font-size: 1rem;
     text-indent: 0.8rem;
   }
-}
+} */

@@ -1,5 +1,7 @@
 .Impressum {
   color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
   & h1 {
     font-size: 2rem;
     padding-left: 1rem;
@@ -33,12 +35,27 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .Impressum {
+    margin: 3rem auto 4rem auto;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .Impressum {
-    & .impressum-group,
-    .impressum-block,
-    h4 {
-      margin-bottom: 1.5rem;
-    }
+    margin: 4rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Impressum {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Impressum {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
   }
 }

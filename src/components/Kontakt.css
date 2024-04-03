@@ -1,5 +1,7 @@
 .Kontakt {
   color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
   & h1 {
     font-size: 2rem;
     padding-left: 1rem;
@@ -29,18 +31,10 @@
       list-style-type: none;
       & div {
         display: flex;
-        color: #59517e;
         & li {
           width: 8rem;
         }
       }
-    }
-    & h4,
-    h2 {
-      color: #554e78;
-    }
-    & p {
-      color: #59517e;
     }
     & a {
       color: var(--tanhide);
@@ -59,7 +53,7 @@
       border-radius: 0.3rem;
       font-size: 1rem;
       padding: 0.75rem;
-      border: 2px solid #59517e;
+      border: 2px solid var(--martinique);
 
       &::placeholder {
         color: var(--greychateau);
@@ -70,7 +64,7 @@
       }
     }
     & textarea {
-      border: 2px solid #59517e;
+      border: 2px solid var(--martinique);
       border-radius: 0.3rem;
       font-size: 1rem;
       padding: 0.75rem;
@@ -94,8 +88,6 @@
       }
       & p {
         letter-spacing: 0.02rem;
-        color: #59517e;
-
         & a {
           text-decoration: none;
           color: var(--tanhide);
@@ -106,25 +98,32 @@
       }
     }
     & .kontakt-btn {
+      text-decoration: none;
+      color: var(--base-100);
       & button {
         display: flex;
-        justify-content: space-between;
+        padding: 0.5rem;
         align-items: center;
-        gap: 1rem;
         border: none;
-        font-size: 1.3rem;
-        font-weight: 600;
-        cursor: pointer;
-        padding: 0.375rem 0.375rem 0.375rem 1.5rem;
-        border-radius: 3.5rem;
-        color: var(--martinique);
+        gap: 0.625rem;
+        border-radius: 2.5rem;
         background-color: var(--tanhide);
+        font-size: 1.3rem;
+        padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+        line-height: 1.5;
+        letter-spacing: 0.02rem;
+        font-weight: 600;
+        color: var(--martinique);
+        cursor: pointer;
         & i {
           background-color: var(--martinique);
           border-radius: 2.5rem;
           font-size: 1.3rem;
           padding: 0.625rem;
           color: var(--tanhide);
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         &:hover {
           background-color: var(--tanhide-focus);
@@ -135,6 +134,7 @@
 }
 @media screen and (min-width: 768px) {
   .Kontakt {
+    margin: 3rem auto 4rem auto;
     & .kontakt-container {
       flex-direction: row;
       justify-content: space-between;
@@ -145,6 +145,10 @@
   .Kontakt {
     display: flex;
     justify-content: space-between;
+    margin: 4rem auto 4rem auto;
+    & .kontakt-container {
+      flex-direction: column;
+    }
     & form {
       width: 50%;
       padding: 1.875rem;
@@ -154,8 +158,13 @@
 
 @media screen and (min-width: 1200px) {
   .Kontakt {
-    & .kontakt-container {
-      flex-direction: column;
-    }
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Kontakt {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
   }
 }

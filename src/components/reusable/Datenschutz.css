@@ -1,9 +1,10 @@
 .Datenschutz {
   color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
   & h1 {
     font-size: 2rem;
     padding-left: 1rem;
-    font-weight: 800;
     letter-spacing: 0.02rem;
     margin-bottom: 1rem;
   }
@@ -83,5 +84,30 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Datenschutz {
+    margin: 3rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Datenschutz {
+    margin: 4rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Datenschutz {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Datenschutz {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
   }
 }

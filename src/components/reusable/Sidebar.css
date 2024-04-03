@@ -65,7 +65,7 @@
       font-size: 2rem;
     }
     & .nav-link {
-      font-size: 1.3rem;
+      /* font-size: 1.3rem; */
       padding: 2.5rem 2.5rem 0;
     }
     & .fa-house,
@@ -101,8 +101,8 @@
     }
     & .nav-link {
       padding: 0.5rem 1rem;
-      font-size: 1.2rem;
-      font-weight: 600;
+      /* font-size: 1.2rem;
+      font-weight: 600; */
       & p {
         color: var(--martinique);
       }
@@ -120,10 +120,5 @@
   .Sidebar:hover {
     background-color: var(--base-100);
     text-decoration: none;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .Sidebar {
   }
 }

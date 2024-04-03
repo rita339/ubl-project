@@ -36,48 +36,38 @@ body {
 }
 
 main {
-  margin: 2rem auto 3rem auto;
+  /* margin: 3rem auto 3rem auto; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 section {
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
 }
 
-/* p {
-      letter-spacing: 0.02rem;
-}
-
-h1,
-h2,
-h4 {
-  color: #554e78;
-} */
-
 /* Media Queries Breakpoints */
 @media screen and (min-width: 768px) {
-  main {
+  /* main {
     margin: 3rem auto 4rem auto;
-  }
+  } */
 }
 @media screen and (min-width: 992px) {
   main {
-    margin: 4rem auto 4rem auto;
+    /* margin: 4rem auto 4rem auto; */
   }
 }
 @media screen and (min-width: 1200px) {
   & section {
-    width: 74%;
+    /* width: 74%; */
   }
 }
 @media screen and (min-width: 1920px) {
   main {
-    margin: 5rem auto 5rem auto;
+    /* margin: 5rem auto 8rem auto; */
     & section {
-      width: 71%;
+      /* width: 71%; */
     }
   }
 }

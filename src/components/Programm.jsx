@@ -1,7 +1,21 @@
 import { Link } from "react-router-dom";
 import "./Programm.css";
+import { useEffect } from "react";
 
 export const Programm = () => {
+  useEffect(() => {
+    const handleClick = (event) => {
+      if (event.target.classList.contains("programm-group")) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
   return (
     <section className="Programm">
       <div className="programm-header">

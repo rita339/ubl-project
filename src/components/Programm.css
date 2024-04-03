@@ -5,11 +5,14 @@
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
+  width: 90%;
+  margin: 3rem auto 3rem auto;
   & .programm-header {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     line-height: 1.5;
+    width: 95%;
     & h1 {
       font-size: 2rem;
       padding-left: 1rem;
@@ -52,7 +55,6 @@
         }
         & p {
           line-height: 1.5;
-          color: #59517e;
         }
       }
       & .programm-footer {
@@ -70,8 +72,9 @@
 
 @media screen and (min-width: 768px) {
   .Programm {
+    margin: 3rem auto 4rem auto;
     & .programm-header {
-      width: 93%;
+      width: 90%;
     }
     & .cards-container {
       justify-content: space-between;
@@ -82,7 +85,8 @@
 
 @media screen and (min-width: 992px) {
   .Programm {
-    /* width: 80%; // zentriert den Container*/
+    width: 95%;
+    margin: 4rem auto 4rem auto;
     & .cards-container {
       justify-content: space-between;
       & .programm-group {
@@ -95,6 +99,10 @@
 @media screen and (min-width: 1200px) {
   .Programm {
     gap: 3rem;
+    width: 80%;
+    & .programm-header {
+      width: 88%;
+    }
     & .programm-group {
       width: 60%;
     }
@@ -105,6 +113,8 @@
   .Programm {
     font-size: 1.5rem;
     gap: 4rem;
+    margin: 5rem auto 8rem auto;
+    width: 78%;
     & .programm-header {
       & h1 {
         font-size: 3rem;

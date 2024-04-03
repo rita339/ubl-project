@@ -1,5 +1,7 @@
 .KitaProgramm {
   color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
   & h1 {
     font-size: 2rem;
     padding-left: 1.5rem;
@@ -24,5 +26,30 @@
   }
   & p {
     line-height: 1.625;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .KitaProgramm {
+    margin: 3rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .KitaProgramm {
+    margin: 4rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .KitaProgramm {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .KitaProgramm {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
   }
 }

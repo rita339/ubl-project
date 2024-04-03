@@ -1,0 +1,152 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  color: var(--martinique);
+  margin-bottom: 3rem;
+  & .header-home {
+    background-image: url("/burg-rode-dunkel.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    /* padding: 0 0.75rem 3rem 0.75rem; */
+    padding-bottom: 3rem;
+    & .header-inhalt {
+      padding: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: var(--base-100);
+      & h1 {
+        font-size: 2rem;
+        letter-spacing: 0.02rem;
+        line-height: 1.33;
+      }
+      & p {
+        letter-spacing: 0.02rem;
+        font-size: 1.125rem;
+      }
+      & .header-btn {
+        border: none;
+        text-decoration: none;
+        & button {
+          display: flex;
+          padding: 0.5rem;
+          align-items: center;
+          border: none;
+          gap: 0.625rem;
+          background-color: var(--tanhide-focus);
+          font-size: 1.3rem;
+          padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+          line-height: 1.5;
+          letter-spacing: 0.02rem;
+          font-weight: 600;
+          color: var(--base-200);
+          cursor: pointer;
+          &:hover {
+            background-color: var(--tanhide);
+          }
+          & i {
+            font-size: 1.3rem;
+            padding: 0.625rem;
+            color: var(--base-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  & .home-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 4rem;
+    & .home-group {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      & .group-content {
+        /* border-radius: 1.25rem; */
+        box-shadow: 0px 8px 12px #091e4226, 0px 0px 1px #091e424f;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        & h3 {
+          font-size: 1.5rem;
+        }
+        & p {
+          line-height: 1.8;
+          font-size: 1.125rem;
+        }
+      }
+      & img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Home {
+    margin-bottom: 4rem;
+    & .header-home {
+      & .header-inhalt {
+        padding: 0.75rem 0.75rem 0.75rem 1.7rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Home {
+    & .home-wrapper {
+      & .home-group {
+        align-items: center;
+        flex-direction: row;
+        & img {
+          width: 40%;
+          height: 350px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Home {
+    gap: 5rem;
+    margin-bottom: 8rem;
+    & .header-home {
+      padding-bottom: 5rem;
+      & .header-inhalt {
+        padding: 0.75rem 0.75rem 0.75rem 2.8rem;
+      }
+    }
+    & .home-wrapper {
+      width: 75%;
+      gap: 6rem;
+      & .home-group {
+        justify-content: space-between;
+        & .group-content {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Home {
+    & .home-wrapper {
+      width: 72%;
+    }
+  }
+}

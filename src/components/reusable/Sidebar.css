@@ -1,0 +1,124 @@
+.Sidebar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  /* top: 7.5rem; */
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 100%;
+  padding-top: 7.5rem;
+  background-color: var(--tanhide);
+  /* background: linear-gradient(to right, #22466e 0%, #1f61aa 100%); */
+  background: linear-gradient(to right, #727287 0%, #9b9bb4 100%);
+
+  & .fa-xmark {
+    cursor: pointer;
+    color: var(--base-100);
+    font-size: 1.6rem;
+    position: absolute;
+    right: 2rem;
+    top: 3.5rem;
+    &:hover {
+      color: var(--tanhide);
+    }
+  }
+
+  & .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    text-decoration: none;
+    color: var(--base-100);
+    padding: 2.5rem 1.5rem 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    & p {
+      color: var(--base-100);
+      &:hover {
+        color: var(--tanhide);
+      }
+    }
+  }
+  & .divider {
+    width: 90%;
+    height: 0.0625rem;
+    border: 1px solid #ffffff20;
+    margin: 1.063rem auto 0;
+  }
+  & .fa-check-double {
+    color: var(--tanhide);
+    transform: rotate(270deg);
+    font-size: 1.5rem;
+  }
+  & p {
+    color: var(--martinique);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Sidebar {
+    & .fa-xmark {
+      font-size: 2rem;
+    }
+    & .nav-link {
+      /* font-size: 1.3rem; */
+      padding: 2.5rem 2.5rem 0;
+    }
+    & .fa-house,
+    .fa-user,
+    .fa-bell,
+    .fa-book,
+    .fa-envelope {
+      font-size: 1.8rem;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Sidebar {
+    & .nav-link {
+      padding: 2.5rem 3.5rem 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Sidebar {
+    position: static;
+    justify-content: flex-end;
+    height: auto;
+    width: 60%;
+    flex-direction: row;
+    padding-top: 0;
+    background: var(--base-100);
+    & .fa-xmark {
+      display: none;
+    }
+    & .nav-link {
+      padding: 0.5rem 1rem;
+      /* font-size: 1.2rem;
+      font-weight: 600; */
+      & p {
+        color: var(--martinique);
+      }
+      & i {
+        display: none;
+      }
+    }
+    .nav-link p:hover {
+      color: var(--tanhide);
+    }
+    & .divider {
+      display: none;
+    }
+  }
+  .Sidebar:hover {
+    background-color: var(--base-100);
+    text-decoration: none;
+  }
+}

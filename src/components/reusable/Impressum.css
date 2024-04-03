@@ -1,0 +1,61 @@
+.Impressum {
+  color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
+  & h1 {
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.02rem;
+    margin-bottom: 1rem;
+  }
+  & .impressum-group {
+    line-height: 1.625;
+    margin-bottom: 0.938rem;
+    letter-spacing: 0.02rem;
+    & .email-link-container {
+      display: flex;
+      gap: 1rem;
+      & a {
+        text-decoration: none;
+        color: var(--tanhide);
+      }
+      & a:hover {
+        color: var(--tanhide-focus);
+      }
+    }
+  }
+  & .impressum-block {
+    line-height: 1.375;
+    letter-spacing: 0.02rem;
+    margin-bottom: 0.938rem;
+    & h4 {
+      margin-bottom: 0.938rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Impressum {
+    margin: 3rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Impressum {
+    margin: 4rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Impressum {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Impressum {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
+  }
+}

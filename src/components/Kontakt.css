@@ -1,0 +1,170 @@
+.Kontakt {
+  color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
+  & h1 {
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: 800;
+    padding: 1rem;
+    letter-spacing: 0.02rem;
+  }
+  & .kontakt-container {
+    display: flex;
+    flex-direction: column;
+  }
+  & .kontakt-header {
+    margin-bottom: 2.575rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.5;
+    & h4 {
+      margin-bottom: 1rem;
+    }
+    & .kontakt-group {
+      display: flex;
+      gap: 1rem;
+      & p {
+        width: 3rem;
+      }
+    }
+    & .sprechzeiten {
+      list-style-type: none;
+      & div {
+        display: flex;
+        & li {
+          width: 8rem;
+        }
+      }
+    }
+    & a {
+      color: var(--tanhide);
+      text-decoration: none;
+      &:hover {
+        color: var(--tanhide-focus);
+      }
+    }
+  }
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    width: 100%;
+    & input {
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      padding: 0.75rem;
+      border: 2px solid var(--martinique);
+
+      &::placeholder {
+        color: var(--greychateau);
+      }
+      &:focus {
+        outline: var(--tanhide-focus);
+        border: 2px solid var(--tanhide);
+      }
+    }
+    & textarea {
+      border: 2px solid var(--martinique);
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      padding: 0.75rem;
+      &::placeholder {
+        color: var(--greychateau);
+      }
+      &:focus {
+        outline: var(--tanhide-focus);
+        border: 2px solid var(--tanhide);
+      }
+    }
+
+    & label {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      gap: 1rem;
+      & #agreement {
+        height: 1rem;
+        width: 1rem;
+      }
+      & p {
+        letter-spacing: 0.02rem;
+        & a {
+          text-decoration: none;
+          color: var(--tanhide);
+          &:hover {
+            color: var(--tanhide-focus);
+          }
+        }
+      }
+    }
+    & .kontakt-btn {
+      text-decoration: none;
+      color: var(--base-100);
+      & button {
+        display: flex;
+        padding: 0.5rem;
+        align-items: center;
+        border: none;
+        gap: 0.625rem;
+        border-radius: 2.5rem;
+        background-color: var(--tanhide);
+        font-size: 1.3rem;
+        padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+        line-height: 1.5;
+        letter-spacing: 0.02rem;
+        font-weight: 600;
+        color: var(--martinique);
+        cursor: pointer;
+        & i {
+          background-color: var(--martinique);
+          border-radius: 2.5rem;
+          font-size: 1.3rem;
+          padding: 0.625rem;
+          color: var(--tanhide);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &:hover {
+          background-color: var(--tanhide-focus);
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .Kontakt {
+    margin: 3rem auto 4rem auto;
+    & .kontakt-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .Kontakt {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto 4rem auto;
+    & .kontakt-container {
+      flex-direction: column;
+    }
+    & form {
+      width: 50%;
+      padding: 1.875rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Kontakt {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .Kontakt {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
+  }
+}

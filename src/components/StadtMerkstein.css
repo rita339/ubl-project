@@ -5,7 +5,6 @@
   & h1 {
     font-size: 2rem;
     padding-left: 1rem;
-    font-weight: 800;
     letter-spacing: 0.02rem;
     margin-bottom: 1rem;
   }
@@ -46,9 +45,15 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1771px) {
   .StadtMerkstein {
     margin: 5rem auto 8rem auto;
     width: 72%;
   }
 }
+/* @media screen and (min-width: 1920px) {
+  .StadtMerkstein {
+    margin: 5rem auto 8rem auto;
+    width: 72%;
+  }
+} */

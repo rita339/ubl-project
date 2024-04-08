@@ -6,7 +6,17 @@ export const Home = () => {
     <section className="Home">
       <div className="header-home">
         <div className="header-inhalt">
-          <h1>Unabhängige BürgerListe - Herzogenrath</h1>
+          <div className="header-title">
+            <h1>
+              <span>U</span>nabhängige <span>B</span>ürger<span>L</span>iste -
+              Herzogenrath
+            </h1>
+            <ul>
+              <li>Bürgernah</li>
+              <li>Ökologisch</li>
+              <li>Sozial</li>
+            </ul>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           <Link to="/kontakt" className="header-btn">
             <button>
@@ -15,6 +25,7 @@ export const Home = () => {
             </button>
           </Link>
         </div>
+        <img src="./burg-rode.jpg" alt="" />
       </div>
 
       <div className="home-wrapper">

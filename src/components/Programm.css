@@ -16,7 +16,6 @@
     & h1 {
       font-size: 2rem;
       padding-left: 1rem;
-      font-weight: 800;
       padding: 1rem 1rem 0 1rem;
     }
   }
@@ -101,7 +100,7 @@
     gap: 3rem;
     width: 80%;
     & .programm-header {
-      width: 88%;
+      width: 90%;
     }
     & .programm-group {
       width: 60%;
@@ -109,19 +108,24 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1771px) {
   .Programm {
-    font-size: 1.5rem;
     gap: 4rem;
     margin: 5rem auto 8rem auto;
     width: 78%;
-    & .programm-header {
-      & h1 {
-        font-size: 3rem;
-      }
-    }
     & .cards-container {
       gap: 5rem;
     }
   }
 }
+
+/* @media screen and (min-width: 1920px) {
+  .Programm {
+    gap: 4rem;
+    margin: 5rem auto 8rem auto;
+    width: 78%;
+    & .cards-container {
+      gap: 5rem;
+    }
+  }
+} */

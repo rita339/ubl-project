@@ -1,0 +1,84 @@
+.Aktuelles {
+  color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+  width: 90%;
+  & h1 {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.02rem;
+    margin-bottom: 2.5rem;
+  }
+  & .aktuelles-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    & .aktuelles-group {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      & .aktuelles-content {
+        /* border-radius: 1.25rem; */
+        box-shadow: 0px 8px 12px #091e4226, 0px 0px 1px #091e424f;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        & h3 {
+          font-size: 1.5rem;
+        }
+        & p {
+          line-height: 1.8;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Aktuelles {
+    margin: 3rem auto 4rem auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Aktuelles {
+    margin: 4rem auto 4rem auto;
+    & .aktuelles-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Aktuelles {
+    width: 75%;
+    & .aktuelles-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+  }
+}
+
+@media screen and (min-width: 1771px) {
+  .Aktuelles {
+    gap: 4rem;
+    margin: 5rem auto 8rem auto;
+    width: 72%;
+    & .aktuelles-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+  }
+}
+
+/* @media screen and (min-width: 1920px) {
+  .Aktuelles {
+    gap: 4rem;
+    margin: 5rem auto 8rem auto;
+    width: 72%;
+    & .aktuelles-wrapper {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+  }
+} */

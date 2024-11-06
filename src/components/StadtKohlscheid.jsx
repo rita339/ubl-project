@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./StadtKohlscheid.css";
 
 export const StadtKohlscheid = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="StadtKohlscheid">
       <h1>Stadtplanung Kohlscheid</h1>

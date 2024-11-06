@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./StadtMerkstein.css";
 
 export const StadtMerkstein = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="StadtMerkstein">
       <h1>Stadtplanung Merkstein</h1>

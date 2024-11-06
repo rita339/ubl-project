@@ -1,5 +1,12 @@
+import { useEffect } from "react";
 import "./KitaProgramm.css";
 export const KitaProgramm = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="KitaProgramm">
       <h1>KiTa, Schulen & Kinder</h1>

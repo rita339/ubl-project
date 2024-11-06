@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./SportProgramm.css";
 
 export const SportProgramm = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="SportProgramm">
       <h1>Ambitionen Sport</h1>

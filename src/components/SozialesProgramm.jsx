@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./SozialesProgramm.css";
 
 export const SozialesProgramm = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="SozialesProgramm">
       <h1>Senioren, Soziales & Integration</h1>

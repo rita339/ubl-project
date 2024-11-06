@@ -1,7 +1,7 @@
 export default [
   {
     name: "Bruno Barth",
-    image: "./maleProfile.jpg",
+    image: "./2_Bruno.png",
     position: "Fraktionsvorsitzender",
     committees: ["Ausschuss für Bildung", "Haupt- und Finanzausschuss"],
   },

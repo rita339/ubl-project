@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./JugendProgramm.css";
 
 export const JugendProgramm = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="JugendProgramm">
       <h1>Unsere Jugend</h1>

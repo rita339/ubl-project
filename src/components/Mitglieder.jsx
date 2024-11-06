@@ -8,6 +8,12 @@ export const Mitglieder = () => {
   const [activeCardMitglieder, setActiveCardMitglieder] = useState(null);
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+  useEffect(() => {
     const handleDocumentClick = (e) => {
       if (!e.target.closest(".card")) {
         setActiveCardMembers(null);

@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./UmweltProgramm.css";
 
 export const UmweltProgramm = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="UmweltProgramm">
       <h1>Umwelt & Verkehr</h1>

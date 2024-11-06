@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./StadtHerzMitte.css";
 
 export const StadtHerzMitte = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <section className="StadtHerzMitte">
       <h1>Stadtplanung Herzogenrath Mitte</h1>

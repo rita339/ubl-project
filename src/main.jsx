@@ -7,6 +7,7 @@ import { Home } from "./components/Home.jsx";
 import { Aktuelles } from "./components/Aktuelles.jsx";
 import { Kontakt } from "./components/Kontakt.jsx";
 import { Programm } from "./components/Programm.jsx";
+import Archiv from "./components/Archiv.jsx";
 import { Mitglieder } from "./components/Mitglieder.jsx";
 import { KitaProgramm } from "./components/KitaProgramm.jsx";
 import { UmweltProgramm } from "./components/UmweltProgramm.jsx";
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "aktuelles",
         element: <Aktuelles />,
+      },
+      {
+        path: "archiv",
+        element: <Archiv />,
       },
       {
         path: "programm",

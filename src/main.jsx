@@ -17,9 +17,9 @@ import { StadtMerkstein } from "./components/StadtMerkstein.jsx";
 import { StadtHerzMitte } from "./components/StadtHerzMitte.jsx";
 import { SportProgramm } from "./components/SportProgramm.jsx";
 import { SozialesProgramm } from "./components/SozialesProgramm.jsx";
-
 import { Datenschutz } from "./components/reusable/Datenschutz.jsx";
 import { Impressum } from "./components/reusable/Impressum.jsx";
+import MitgliedDetail from "./components/members/MitgliedDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -78,6 +78,10 @@ const router = createBrowserRouter([
       {
         path: "mitglieder",
         element: <Mitglieder />,
+      },
+      {
+        path: "mitglieder/:id", // dynamische Route
+        element: <MitgliedDetail />,
       },
       {
         path: "kontakt",

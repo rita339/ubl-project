@@ -25,7 +25,7 @@ export const Home = () => {
             </button>
           </Link>
         </div>
-        <img src="./burg-rode.jpg" alt="" />
+        <img src="./Startbild.jpg" alt="startbild" />
       </div>
 
       <div className="home-wrapper">

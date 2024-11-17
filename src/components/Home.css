@@ -69,7 +69,7 @@
       }
     }
     & img {
-      width: 95%;
+      width: 90%;
     }
   }
   & .home-wrapper {
@@ -124,7 +124,7 @@
         }
       }
       & img {
-        width: 95%;
+        width: 85%;
       }
     }
   }
@@ -160,7 +160,7 @@
         }
       }
       & img {
-        width: 95%;
+        width: 90%;
       }
     }
     & .home-wrapper {
@@ -202,7 +202,7 @@
         }
       }
       & img {
-        width: 60%;
+        width: 50%;
       }
     }
     & .home-wrapper {
@@ -241,11 +241,3 @@
     }
   }
 }
-
-/* @media screen and (min-width: 1920px) {
-  .Home {
-    & .home-wrapper {
-      width: 72%;
-    }
-  }
-} */

@@ -14,13 +14,6 @@ export default [
     committee: "Mobilität und Tiefbau",
   },
   {
-    id: "klausschillings",
-    name: "Dr. Klaus Schillings",
-    image: "./maleProfile.jpg",
-    position: "sachkundiger Bürger",
-    committee: "Stadtentwicklung und Planung",
-  },
-  {
     id: "franzmahr",
     name: "Franz-Josef Mahr",
     image: "./Franz-Josef-1.png",

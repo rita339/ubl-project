@@ -41,11 +41,26 @@
           color: var(--tanhide-focus);
         }
       }
-      & .programm-icon i {
+      /* & .programm-icon i {
         border-radius: 0.75rem;
         background-color: var(--tanhide);
         padding: 1rem;
         font-size: 1.8rem;
+      } */
+      & .programm-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.75rem;
+        background-color: var(--tanhide);
+        padding: 1rem;
+        width: 4rem;
+        height: 4rem;
+        & img {
+          border-radius: 0.5rem;
+          height: 4rem;
+          object-fit: contain; /* Damit das Bild nicht verzerrt wird */
+        }
       }
       & .programm-content {
         & h3 {

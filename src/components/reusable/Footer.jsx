@@ -9,6 +9,13 @@ export const Footer = () => {
         <h5>Mitglied werden:</h5>
         <li>
           <i className="fa-solid fa-check-double"></i>
+          {/* PDF fürs Archiv hinzufügen */}
+          <a href="/" target="_blank" rel="noreferrer">
+            Archiv
+          </a>
+        </li>
+        <li>
+          <i className="fa-solid fa-check-double"></i>
           <a href="/Satzung_UBL.pdf" target="_blank" rel="noreferrer">
             Satzung
           </a>

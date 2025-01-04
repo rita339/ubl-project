@@ -30,12 +30,6 @@ export const Sidebar = ({ isActive, setIsActive }) => {
         </NavLink>
         <li className="divider"></li>
 
-        <NavLink to="/archiv" className="nav-link" onClick={handleClick}>
-          <i className="fa-solid fa-check-double"></i>
-          <p>Archiv</p>
-        </NavLink>
-        <li className="divider"></li>
-
         <NavLink to="/programm" className="nav-link" onClick={handleClick}>
           <i className="fa-solid fa-check-double"></i>
           <p>Programm</p>

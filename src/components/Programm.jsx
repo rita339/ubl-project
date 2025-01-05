@@ -6,7 +6,7 @@ export const Programm = () => {
   useEffect(() => {
     const handleClick = (event) => {
       if (event.target.classList.contains("programm-group")) {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0 });
       }
     };
 

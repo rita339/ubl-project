@@ -32,85 +32,71 @@ export const Home = () => {
         {/* Erster Block */}
         <div className="home-group">
           <div className="group-content">
-            <h3>Lorem ipsum dolor sit.</h3>
+            <h3>UBL-Bürgersprechstunde mit Ute Kurig</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              commodi quasi alias accusantium necessitatibus expedita sed saepe
-              consequatur, error, quisquam quod asperiores facere rem corporis
-              ducimus facilis officiis. Nihil, eligendi.
+              Die nächste Bürgersprechstunde der "Unabhängigen Bürgerliste
+              Herzogenrath" (UBL) findet am kommenden Montag...
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed ipsa, omnis eaque nobis error!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed ipsa, omnis eaque nobis error!
-            </p>
+            <Link to="/aktuelles" className="aktuelles-link">
+              <p>weiterlesen</p>
+              <i className="fa-solid fa-check-double"></i>
+            </Link>
+
+            <div className="home-pic">
+              <img src="./Ute-1.png" alt="Ute Bild" />
+            </div>
           </div>
-          <img src="./pic.jpg" alt="Fake Bild" />
         </div>
         {/* zweiter Block */}
         <div className="home-group">
-          <img src="./pic.jpg" alt="Fake Bild" />
           <div className="group-content">
-            <h3>Lorem ipsum dolor sit.</h3>
+            <h3>Bürgersprechstunde der UBL</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              commodi quasi alias accusantium necessitatibus expedita sed saepe
-              consequatur, error, quisquam quod asperiores facere rem corporis
-              ducimus facilis officiis. Nihil, eligendi.
+              Die nächste Bürgersprechstunde der "Unabhängigen Bürgerliste
+              Herzogenrath" (UBL) findet am kommenden Montag...
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed ipsa, omnis eaque nobis error!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed ipsa, omnis eaque nobis error!
-            </p>
+            <Link to="/aktuelles" className="aktuelles-link">
+              <p>weiterlesen</p>
+              <i className="fa-solid fa-check-double"></i>
+            </Link>
+            <div className="home-pic">
+              <img src="./pic.jpg" alt="Fake Bild" />
+            </div>
           </div>
         </div>
         {/* Driiter Block */}
         <div className="home-group">
           <div className="group-content">
-            <h3>Lorem ipsum dolor sit.</h3>
+            <h3>Schulen und Bildung haben für die UBL absolute Priorität!</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              commodi quasi alias accusantium necessitatibus expedita sed saepe
-              consequatur, error, quisquam quod asperiores facere rem corporis
-              ducimus facilis officiis. Nihil, eligendi.
+              Die notwendige Erweiterung des Städtischen Gymnasiums, die
+              Sanierung des kompletten C-Traktes an der Europaschule in
+              Merkstein ...
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed ipsa, omnis eaque nobis error!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed ipsa, omnis eaque nobis error!
-            </p>
+            <Link to="/aktuelles" className="aktuelles-link">
+              <p>weiterlesen</p>
+              <i className="fa-solid fa-check-double"></i>
+            </Link>
+            <div className="home-pic">
+              <img src="./pic.jpg" alt="Fake Bild" />
+            </div>
           </div>
-          <img src="./pic.jpg" alt="Fake Bild" />
         </div>
         {/* Vierter Block */}
         <div className="home-group">
-          <img src="./pic.jpg" alt="Fake Bild" />
           <div className="group-content">
             <h3>Lorem ipsum dolor sit.</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
               commodi quasi alias accusantium necessitatibus expedita sed saepe
-              consequatur, error, quisquam quod asperiores facere rem corporis
-              ducimus facilis officiis. Nihil, eligendi.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed ipsa, omnis eaque nobis error!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sed ipsa, omnis eaque nobis error!
-            </p>
+            <Link to="/aktuelles" className="aktuelles-link">
+              <p>weiterlesen</p>
+              <i className="fa-solid fa-check-double"></i>
+            </Link>
+            <div className="home-pic">
+              <img src="./pic.jpg" alt="Fake Bild" />
+            </div>
           </div>
         </div>
       </div>

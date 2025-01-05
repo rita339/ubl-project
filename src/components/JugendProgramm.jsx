@@ -5,7 +5,6 @@ export const JugendProgramm = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   }, []);
   return (

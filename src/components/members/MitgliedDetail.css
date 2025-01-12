@@ -2,72 +2,138 @@
   color: var(--martinique);
   margin: 3rem auto;
   width: 90%;
-
-  h1 {
-    font-size: 2rem;
-    padding-left: 1rem;
-    letter-spacing: 0.02rem;
-    margin-bottom: 1rem;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.25rem;
-    margin-bottom: 1rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  p {
-    line-height: 1.625;
-    margin-bottom: 0.5rem;
-    margin-top: 1.25rem;
-  }
-
-  .committees-list,
-  .hobbies-list {
-    list-style-type: disc;
-    padding-left: 1.625rem;
-    margin: 1.25rem 0;
-
-    li {
-      padding-left: 0.375rem;
-      margin: 0.5rem 0;
-      line-height: 1.625;
-      &::marker {
-        color: var(--santasgrey);
-        opacity: 0.5;
-      }
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-  .MitgliedDetail {
-    margin: 3rem auto 4rem auto;
-  }
+.MitgliedDetail h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  margin-bottom: 1.5rem;
+  color: var(--tanhide);
 }
 
+.MitgliedDetail img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 3px solid var(--tanhide);
+  box-shadow: 0 6px 12px rgba(64, 64, 96, 0.3), 0 2px 4px rgba(64, 64, 96, 0.2);
+}
+
+.MitgliedDetail p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.MitgliedDetail h3 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--tanhide);
+  text-align: center;
+}
+
+.MitgliedDetail ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.MitgliedDetail li {
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--base-200);
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 30rem;
+  text-align: center;
+}
+
+/* Neuer Style für den Description-Container */
+.description-container {
+  margin: 3.5rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* width: 43rem; */
+}
+
+.description-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--base-200);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description-container p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+/* Media Queries */
 @media screen and (min-width: 992px) {
   .MitgliedDetail {
-    margin: 4rem auto;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .MitgliedDetail img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0; /* Eckiges Bild */
+    object-position: top;
+  }
+
+  .MitgliedDetail h1 {
+    font-size: 2.75rem;
+    /* text-align: left; */
+  }
+
+  .MitgliedDetail p {
+    font-size: 1.25rem;
+    /* text-align: left; */
+  }
+
+  .description-container {
+    margin: 4.5rem 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .MitgliedDetail {
-    width: 75%;
+    width: 65%;
+    gap: 6.5rem;
+    margin: 4rem auto;
   }
-}
 
-@media screen and (min-width: 1771px) {
-  .MitgliedDetail {
-    margin: 5rem auto 8rem auto;
-    width: 72%;
+  .MitgliedDetail img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .MitgliedDetail h1 {
+    font-size: 3.5rem;
+  }
+
+  .description-container p {
+    font-size: 1.35rem;
   }
 }

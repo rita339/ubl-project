@@ -11,10 +11,11 @@ export const memberTexts = {
       "Eurode-Verbandsversammlung",
     ],
     description: [
-      "Vorsitzender „Betreute Schulen Aachen-Land e.V.“ - Träger von 10 „Offenen Ganztagsgrundschulen“ mit über 130 Mitarbeiter:innen",
+      '(Gründungs)Mitglied "Betreute Schulen Aachen-Land e.V."',
+      'Träger von 9 "Offenen Ganztagsgrundschulen" (OGS) mit über 130 Mitarbeiter/innen',
       "Mitglied im „Naturschutzbeirat“ der StädteRegion Aachen",
       "Mitglied „Naturfreunde“-Ortsgruppe Herzogenrath-Merkstein",
-      "Vorstandsmitglied  AWO-Ortgruppe Herzogenrath-Mitte",
+      "Vorstandsmitglied AWO-Ortgruppe Herzogenrath-Mitte",
     ],
     hobbies: ["Laufen", "Schwimmen", "Fußball", "Lesen"],
     image: "/2_Bruno.png",

@@ -56,16 +56,7 @@ export const Footer = () => {
             Naturfreunde Merkstein
           </a>
         </li>
-        <li>
-          <i className="fa-solid fa-check-double"></i>
-          <a
-            href="https://www.radschnellweg-panorama.info/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Radschnellweg-Panorama
-          </a>
-        </li>
+
         <li>
           <i className="fa-solid fa-check-double"></i>
           <a

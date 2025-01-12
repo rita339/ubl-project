@@ -82,23 +82,6 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        {/* Vierter Block */}
-        <div className="home-group">
-          <div className="group-content">
-            <h3>Lorem ipsum dolor sit.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              commodi quasi alias accusantium necessitatibus expedita sed saepe
-            </p>
-            <Link to="/aktuelles" className="aktuelles-link">
-              <p>weiterlesen</p>
-              <i className="fa-solid fa-check-double"></i>
-            </Link>
-            <div className="home-pic">
-              <img src="./pic.jpg" alt="Fake Bild" />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -35,12 +35,16 @@ export const Home = () => {
             <h3>UBL-Bürgersprechstunde mit Ute Kurig</h3>
             <p>
               Die nächste Bürgersprechstunde der "Unabhängigen Bürgerliste
-              Herzogenrath" (UBL) findet am kommenden Montag...
+              Herzogenrath" (UBL) findet am kommenden Montag, 2. Dezember, von
+              17-18 Uhr statt. In dieser Zeit ist Ute Kurig für Fragen,
+              Anregungen, Hinweisen, Kritik zu kommunalpolitischen Themen
+              telefonisch unter 02406/83125 zu erreichen; sie kann auch
+              persönlich im Rathaus in Raum 105 (1. Etage) aufgesucht werden.
+              Ute Kurig gehört dem Vorstand der Wählergemeinschaft UBL an; sie
+              vertritt die Fraktion als Sprecherin im "Ausschuss für Hochbau und
+              Gebäudemanagement". Dieser Ausschuss kommt am 5. Dezember zu
+              seiner nächsten Sitzung zusammen.
             </p>
-            <Link to="/aktuelles" className="aktuelles-link">
-              <p>weiterlesen</p>
-              <i className="fa-solid fa-check-double"></i>
-            </Link>
 
             <div className="home-pic">
               <img src="./Ute-1.png" alt="Ute Bild" />
@@ -53,12 +57,15 @@ export const Home = () => {
             <h3>Bürgersprechstunde der UBL</h3>
             <p>
               Die nächste Bürgersprechstunde der "Unabhängigen Bürgerliste
-              Herzogenrath" (UBL) findet am kommenden Montag...
+              Herzogenrath" (UBL) findet am kommenden Montag, 25.11., von 17-18
+              Uhr statt. In dieser Zeit ist Ralf Hardt telefonisch unter
+              02406/83125 für Fragen, Anregungen, Kritik zu kommunalpolitischen
+              Fragen zu erreichen. Er kann auch persönlich im Rathaus in Raum
+              105 (1. Etage) aufgesucht werden. Ralf Hardt vertritt die UBL als
+              deren Sprecher im "Ausschuss für Mobilität und Tiefbau"; dieser
+              Ausschuss kommt am 28.11. zu seiner nächsten Sitzung zusammen.
             </p>
-            <Link to="/aktuelles" className="aktuelles-link">
-              <p>weiterlesen</p>
-              <i className="fa-solid fa-check-double"></i>
-            </Link>
+
             <div className="home-pic">
               <img src="./pic.jpg" alt="Fake Bild" />
             </div>
@@ -73,10 +80,7 @@ export const Home = () => {
               Sanierung des kompletten C-Traktes an der Europaschule in
               Merkstein ...
             </p>
-            <Link to="/aktuelles" className="aktuelles-link">
-              <p>weiterlesen</p>
-              <i className="fa-solid fa-check-double"></i>
-            </Link>
+
             <div className="home-pic">
               <img src="./pic.jpg" alt="Fake Bild" />
             </div>

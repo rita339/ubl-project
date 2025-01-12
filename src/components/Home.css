@@ -1,4 +1,4 @@
-.Home {
+/* .Home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,10 +100,9 @@
         justify-content: space-between;
         gap: 1rem;
         height: 100%;
-        /* Flexbox anpassen */
         display: flex;
         flex-direction: column;
-        justify-content: space-between; /* Erlaubt das Bild, unten zu bleiben */
+        justify-content: space-between;
         height: 100%;
 
         & h3 {
@@ -142,14 +141,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top: auto; /* Bild nach unten schieben */
-          height: 300px; /* Hier kannst du die Höhe nach Bedarf anpassen */
+          margin-top: auto;
+          height: 300px;
 
           img {
             background-color: #3b3c4a;
             height: 100%;
             width: 100%;
-            object-fit: contain; /* Bild wird skaliert, um vollständig zu passen */
+            object-fit: contain;
           }
         }
       }
@@ -282,6 +281,294 @@
 @media screen and (min-width: 1771px) {
   .Home {
     margin: 5rem auto 8rem auto;
+    & .header-home {
+      gap: 5rem;
+      width: 85%;
+      & .header-inhalt {
+        gap: 5rem;
+        & .header-title {
+          & h1 {
+            font-size: 3rem;
+          }
+
+          & ul {
+            gap: 3rem;
+          }
+        }
+      }
+    }
+
+    & .home-wrapper {
+      width: 85%;
+    }
+  }
+} */
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  color: var(--martinique);
+  margin: 3rem auto 3rem auto;
+
+  & .header-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    & .header-inhalt {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: var(--martinique);
+      padding: 0.75rem;
+
+      & .header-title {
+        & h1 {
+          font-size: 2rem;
+          letter-spacing: 0.02rem;
+          line-height: 1.8;
+          & span {
+            color: var(--tanhide);
+          }
+        }
+
+        & ul {
+          display: none;
+        }
+      }
+
+      & p {
+        letter-spacing: 0.02rem;
+        font-size: 1.125rem;
+      }
+
+      & .header-btn {
+        border: none;
+        text-decoration: none;
+        width: 25%;
+        & button {
+          display: flex;
+          padding: 0.5rem;
+          align-items: center;
+          border-radius: 2.5rem;
+          border: none;
+          gap: 0.625rem;
+          background-color: var(--tanhide);
+          font-size: 1.3rem;
+          padding: 0.25rem 0.25rem 0.25rem 1.25rem;
+          letter-spacing: 0.02rem;
+          font-weight: 600;
+          color: var(--martinique);
+          cursor: pointer;
+          &:hover {
+            background-color: var(--tanhide-focus);
+          }
+          & i {
+            font-size: 1.3rem;
+            padding: 0.625rem;
+            color: var(--tanhide);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--martinique);
+            border-radius: 2.5rem;
+          }
+        }
+      }
+    }
+
+    & img {
+      width: 90%;
+    }
+  }
+
+  & .home-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 4rem;
+
+    & .home-group {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      height: auto;
+
+      & .group-content {
+        box-shadow: 0px 8px 12px #091e4226, 0px 0px 1px #091e424f;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        height: 100%;
+
+        & h3 {
+          font-size: 1.5rem;
+          color: var(--tanhide);
+        }
+
+        & p {
+          line-height: 1.8;
+          font-size: 1rem;
+          color: var(--martinique);
+        }
+
+        & .home-pic {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: auto;
+          height: 300px;
+
+          img {
+            background-color: #3b3c4a;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Home {
+    margin: 3rem auto 4rem auto;
+
+    & .header-home {
+      width: 95%;
+      & .header-inhalt {
+        width: 90%;
+        padding: 1rem;
+        & .header-title {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          & h1 {
+            font-size: 2.1rem;
+          }
+        }
+
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+
+      & img {
+        width: 85%;
+      }
+    }
+
+    & .home-wrapper {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    & .home-group {
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .Home {
+    margin: 4rem auto 4rem auto;
+
+    & .header-home {
+      & .header-inhalt {
+        width: 95%;
+        padding: 0;
+        & .header-title {
+          width: 98%;
+          & h1 {
+            font-size: 2.5rem;
+          }
+
+          & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            & li {
+              font-size: 1.3rem;
+              font-weight: 500;
+              &::marker {
+                color: var(--tanhide);
+              }
+            }
+          }
+        }
+
+        & p {
+          font-size: 1.2rem;
+        }
+      }
+
+      & img {
+        width: 90%;
+      }
+    }
+
+    & .home-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Home {
+    gap: 8rem;
+
+    & .header-home {
+      flex-direction: row;
+      width: 90%;
+      & .header-inhalt {
+        width: 50%;
+        & .header-title {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2rem;
+          & ul {
+            flex-direction: row;
+            gap: 2rem;
+            padding-left: 1.1rem;
+            & li {
+              font-size: 1rem;
+            }
+          }
+        }
+
+        & p {
+          font-size: 1.1rem;
+        }
+      }
+
+      & img {
+        width: 50%;
+      }
+    }
+
+    & .home-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: 1771px) {
+  .Home {
+    margin: 5rem auto 8rem auto;
+
     & .header-home {
       gap: 5rem;
       width: 85%;

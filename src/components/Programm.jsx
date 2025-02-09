@@ -36,8 +36,7 @@ export const Programm = () => {
       <div className="cards-container">
         <Link to="/kita" className="programm-group">
           <div className="programm-icon">
-            {/* <i className="fa-solid fa-school"></i> */}
-            <img src="2_Bruno.png" alt="Programm Icon" />
+            <img src="2_Bruno-remove.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">
             <h3>KiTa, Schulen & Kinder</h3>
@@ -54,8 +53,7 @@ export const Programm = () => {
 
         <Link to="/umwelt" className="programm-group">
           <div className="programm-icon">
-            {/* <i className="fa-solid fa-seedling"></i> */}
-            <img src="Ralf-1.png" alt="Programm Icon" />
+            <img src="Ralf-removebg.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">
             <h3>Umwelt & Verkehr</h3>
@@ -72,8 +70,7 @@ export const Programm = () => {
 
         <Link to="/jugend" className="programm-group">
           <div className="programm-icon">
-            {/* <i className="fa-regular fa-face-grin-wide"></i> */}
-            <img src="Roxanna-1.png" alt="Programm Icon" />
+            <img src="Roxanna-removebg.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">
             <h3>Jugend</h3>
@@ -90,7 +87,6 @@ export const Programm = () => {
 
         <Link to="/stadt-kohlscheid" className="programm-group">
           <div className="programm-icon">
-            {/* <i className="fa-solid fa-tree-city"></i> */}
             <img src="Heinz-removebg.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">
@@ -108,7 +104,6 @@ export const Programm = () => {
 
         <Link to="/stadt-merkstein" className="programm-group">
           <div className="programm-icon">
-            {/* <i className="fa-solid fa-tree-city"></i> */}
             <img src="Ute-removebg.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">
@@ -126,7 +121,6 @@ export const Programm = () => {
 
         <Link to="/stadt-herzogenrath-mitte" className="programm-group">
           <div className="programm-icon">
-            {/* <i className="fa-solid fa-tree-city"></i> */}
             <img src="Franz-Josef-removebg.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">
@@ -144,7 +138,6 @@ export const Programm = () => {
 
         <Link to="/sport" className="programm-group">
           <div className="programm-icon">
-            {/* <i className="fa-solid fa-basketball"></i> */}
             <img src="Wilfried-removebg.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">
@@ -162,7 +155,6 @@ export const Programm = () => {
 
         <Link to="/soziales" className="programm-group">
           <div className="programm-icon">
-            {/* <i className="fa-solid fa-hand-holding-heart"></i> */}
             <img src="Tatjana-removebg.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">

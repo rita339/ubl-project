@@ -57,4 +57,24 @@ export const memberTexts = {
     ],
     image: "/Ute-1.png",
   },
+  ralfhardt: {
+    name: "Ralf Hardt",
+    year: "1969",
+    beruf: "Systemadministrator (B.Sc. staatlich geprüfter Informatiker)",
+    position: "sachkundiger Bürger",
+    committees: ["Mobilität & Tiefbau"],
+    description: [
+      "Kommunalpolitisch: Mitglied im Ausschuß Mobilität & Tiefbau",
+      "Arbeitskreis Feuerwehr Sicherheit & Bevölkerungsschutz",
+      "Arbeitskreis SmartCity",
+      "(Gründungs)Mitglied Metropolis e.V. Würselen",
+      'Mitglied "Herzogenrather Turnverein e.V."',
+    ],
+    hobbies: [
+      "Volleyball",
+      "Pfarrkarneval St. Mariä Himmelfahrt H’rath(seit 25Jahren Organisator Ausschank)",
+      "Hund",
+    ],
+    image: "/Ralf-1.png",
+  },
 };

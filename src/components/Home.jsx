@@ -17,7 +17,6 @@ export const Home = () => {
               <li>Sozial</li>
             </ul>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           <Link to="/kontakt" className="header-btn">
             <button>
               Kontakt

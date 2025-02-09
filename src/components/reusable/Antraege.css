@@ -1,0 +1,137 @@
+.Antraege {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--martinique);
+  margin: 3rem auto;
+  width: 80%;
+
+  & h1 {
+    font-size: 2rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.8;
+    color: var(--martinique);
+  }
+
+  & p {
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+    text-align: center;
+  }
+
+  & .antraege-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: white;
+    box-shadow: 0px 8px 12px #091e4226, 0px 0px 1px #091e424f;
+    border-radius: 8px;
+    overflow: hidden;
+
+    & thead {
+      background-color: var(--martinique);
+      color: white;
+    }
+
+    & th,
+    & td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    & th {
+      font-weight: bold;
+    }
+
+    & tbody tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    & tbody tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    & a {
+      color: var(--tanhide);
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    & a:hover {
+      text-decoration: underline;
+      color: var(--tanhide-focus);
+    }
+  }
+
+  & .antraege-liste {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Antraege {
+    padding: 2rem 0.5rem;
+    width: 100%;
+  }
+
+  & .antraege-liste {
+    width: 100%;
+    gap: 0.75rem;
+
+    & li {
+      padding: 8px 12px;
+      font-size: 0.875rem;
+    }
+
+    & .download-button {
+      padding: 6px 10px;
+      font-size: 0.875rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Antraege {
+    width: 90%;
+
+    & .antraege-liste {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+
+      & li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0px 4px 6px #091e4226;
+        align-items: center;
+      }
+
+      & .download-button {
+        background-color: var(--tanhide);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      & .download-button:hover {
+        background-color: var(--tanhide-focus);
+      }
+    }
+  }
+}
+
+/* Desktop-Optimierung */
+@media screen and (min-width: 1200px) {
+  .Antraege {
+    width: 70%;
+  }
+}

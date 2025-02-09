@@ -22,15 +22,13 @@ export const Footer = () => {
         </li>
         <li>
           <i className="fa-solid fa-check-double"></i>
-          <a href="/Antragsformular.pdf" target="_blank" rel="noreferrer">
+          <a href="/Antragsformular.pdf" rel="noreferrer">
             Mitgliedsantrag
           </a>
         </li>
         <li>
           <i className="fa-solid fa-check-double"></i>
-          <a href="#" target="_blank" rel="noreferrer">
-            Anträge / Anfragen
-          </a>
+          <a href="/antraege">Anträge / Anfragen</a>
         </li>
       </ul>
 

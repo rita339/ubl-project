@@ -77,4 +77,17 @@ export const memberTexts = {
     ],
     image: "/Ralf-1.png",
   },
+  heinzbekeschus: {
+    name: "Heinz Bekeschus",
+    year: "1955",
+    beruf: "Dipl.-Kaufmann, Fluglotse i.R. ",
+    position: "Stellvertretender UBL-Vorsitzender (kommissarisch)",
+    committees: ["Ausschuss für Stadtentwicklung und Planung"],
+    description: [
+      "Stellvertreter im „Ausschuss für Hochbau und Gebäudemanagement“",
+      "Mitglied im Vorstand der „Alzheimer Gesellschaft StädteRegion Aachen e.V.“",
+    ],
+    hobbies: ["Reisen", "Radfahren", " Alpines Wandern "],
+    image: "/Heinz-1.png",
+  },
 };

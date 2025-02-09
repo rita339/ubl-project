@@ -20,6 +20,7 @@ import { SozialesProgramm } from "./components/SozialesProgramm.jsx";
 import { Datenschutz } from "./components/reusable/Datenschutz.jsx";
 import { Impressum } from "./components/reusable/Impressum.jsx";
 import MitgliedDetail from "./components/members/MitgliedDetail.jsx";
+import Antraege from "./components/reusable/Antraege.jsx";
 
 const router = createBrowserRouter([
   {
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
       {
         path: "mitglieder/:id", // dynamische Route
         element: <MitgliedDetail />,
+      },
+      {
+        path: "antraege",
+        element: <Antraege />,
       },
       {
         path: "kontakt",

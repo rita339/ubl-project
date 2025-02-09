@@ -9,7 +9,7 @@ import { Kontakt } from "./components/Kontakt.jsx";
 import { Programm } from "./components/Programm.jsx";
 import Archiv from "./components/Archiv.jsx";
 import { Mitglieder } from "./components/Mitglieder.jsx";
-import { KitaProgramm } from "./components/KitaProgramm.jsx";
+import { SchulenProgramm } from "./components/SchulenProgramm.jsx";
 import { UmweltProgramm } from "./components/UmweltProgramm.jsx";
 import { JugendProgramm } from "./components/JugendProgramm.jsx";
 import { StadtKohlscheid } from "./components/StadtKohlscheid.jsx";
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
       },
       {
         path: "kita",
-        element: <KitaProgramm />,
+        element: <SchulenProgramm />,
       },
       {
         path: "umwelt",

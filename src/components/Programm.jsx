@@ -39,7 +39,7 @@ export const Programm = () => {
             <img src="2_Bruno-remove.png" alt="Programm Icon" />
           </div>
           <div className="programm-content">
-            <h3>KiTa, Schulen & Kinder</h3>
+            <h3>Schulen</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
               eum iure. Distinctio vero veritatis culpa.

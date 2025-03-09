@@ -21,6 +21,7 @@ import { Datenschutz } from "./components/reusable/Datenschutz.jsx";
 import { Impressum } from "./components/reusable/Impressum.jsx";
 import MitgliedDetail from "./components/members/MitgliedDetail.jsx";
 import Antraege from "./components/reusable/Antraege.jsx";
+import AktuellesDetail from "./components/AktuellesDetail.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "aktuelles",
         element: <Aktuelles />,
+      },
+      {
+        path: "aktuelles/:id", // dynamische Route
+        element: <AktuellesDetail />,
       },
       {
         path: "archiv",

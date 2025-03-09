@@ -1,7 +1,7 @@
 .Aktuelles {
   color: var(--martinique);
   margin: 3rem auto;
-  width: 90%;
+  width: 95%;
   padding: 1rem;
 
   & h1 {
@@ -12,8 +12,8 @@
   }
 
   & .aktuelles-wrapper {
-    display: grid; /* Verwende Grid für die Karten */
-    grid-template-columns: 1fr; /* Standard: eine Spalte */
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 
@@ -36,13 +36,18 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      flex-grow: 1; /* Der Textbereich nimmt den verfügbaren Platz ein */
+      /* flex-grow: 1; */
     }
 
     & h3 {
       font-size: 1.5rem;
       font-weight: bold;
       margin-bottom: 1rem;
+    }
+    .aktuelles-date {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 5px 0;
     }
 
     & p {
@@ -75,7 +80,7 @@
       align-items: center;
       height: 250px;
       background-color: #3b3c4a;
-      margin-top: auto; /* Bild nach unten schieben */
+      margin-top: auto;
 
       img {
         max-height: 100%;
@@ -89,13 +94,23 @@
 @media screen and (min-width: 768px) {
   .Aktuelles {
     margin: 4rem auto;
+    & .aktuelles-wrapper {
+      & .aktuelles-card {
+        & .aktuelles-content {
+          & .text-pic {
+            display: flex;
+            gap: 2rem;
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (min-width: 992px) {
   .Aktuelles {
     & .aktuelles-wrapper {
-      grid-template-columns: repeat(2, 1fr); /* 2 Spalten ab 992px */
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -107,8 +122,3 @@
     }
   }
 }
-
-/* @media screen and (min-width: 1771px) {
-  .Aktuelles {
-  }
-} */

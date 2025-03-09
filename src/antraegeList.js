@@ -19,4 +19,10 @@ export const antraegeList = [
     date: "23. Januar 2025",
     link: "/pdfs/OGS-Pannesheide.pdf",
   },
+  {
+    title:
+      "Förderung und Unterstützung der Kindertageseinrichtungen(KiTa) und Offenen Ganztagsschulen (OGS) in NRW",
+    date: "06. März 2025",
+    link: "/pdfs/Antrag-fur-ABi-und-JHA-Finanzierung.pdf",
+  },
 ];

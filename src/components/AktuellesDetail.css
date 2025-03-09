@@ -1,0 +1,145 @@
+.AktuellesDetail {
+  color: var(--martinique);
+  margin: 3rem auto;
+  width: 90%;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.back-button {
+  background-color: var(--tanhide);
+  color: var(--martinique);
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.back-button:hover {
+  background-color: var(--tanhide-focus);
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 2.5rem;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: gray;
+}
+
+.detail-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--martinique);
+  margin-bottom: 1rem;
+}
+
+.detail-text p {
+  margin: 1.5rem 0;
+}
+
+.detail-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3c4a;
+  margin-top: auto;
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .AktuellesDetail {
+    margin: 4rem auto;
+  }
+
+  .detail-image {
+    aspect-ratio: 16/9;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .AktuellesDetail {
+    width: 75%;
+    padding: 2.5rem;
+    margin: 5rem auto;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .detail-text {
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: var(--martinique);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .date {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .detail-image {
+    aspect-ratio: 16/9;
+    margin-top: 2rem;
+  }
+
+  .detail-image img {
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .back-button {
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+  }
+
+  .back-button:hover {
+    background-color: var(--tanhide-focus);
+  }
+
+  .detail-text p {
+    margin-bottom: 2rem;
+  }
+}
+
+/* @media screen and (min-width: 1200px) {
+  .AktuellesDetail {
+    width: 70%;
+    padding: 3rem;
+  }
+
+  .detail-image {
+    aspect-ratio: 16/9; 
+  }
+} */

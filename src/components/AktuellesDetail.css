@@ -11,135 +11,266 @@
   gap: 1.5rem;
 }
 
-.back-button {
-  background-color: var(--tanhide);
-  color: var(--martinique);
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.back-button:hover {
-  background-color: var(--tanhide-focus);
-}
-
-h1 {
+.AktuellesDetail h1 {
   font-size: 2rem;
   letter-spacing: 0.02rem;
   margin-bottom: 2.5rem;
 }
 
-.date {
+.AktuellesDetail .date {
   font-size: 0.875rem;
   color: gray;
 }
 
-.detail-text {
+.AktuellesDetail .detail-text {
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 1.8;
   color: var(--martinique);
   margin-bottom: 1rem;
 }
 
-.detail-text p {
+.AktuellesDetail .detail-text p {
   margin: 1.5rem 0;
 }
 
-.detail-image {
+.AktuellesDetail .back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 6px;
+  margin-top: 2rem;
+  margin-bottom: 50px;
+  background-color: var(--tanhide);
+  color: var(--martinique);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.AktuellesDetail .back-button i {
+  font-size: 20px;
+}
+.AktuellesDetail .back-button:hover {
+  background-color: var(--tanhide-focus);
+}
+
+.AktuellesDetail .detail-image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #3b3c4a;
   margin-top: auto;
   border-radius: 8px;
-  width: 100%;
-  aspect-ratio: 16/9;
-  position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 300px;
 }
 
-.detail-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.AktuellesDetail .detail-image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
+}
+
+.AktuellesDetail .detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.AktuellesDetail .detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 2;
+}
+
+.AktuellesDetail .back-button {
+  align-self: flex-start;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--tanhide);
+  color: var(--martinique);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1.125rem;
+  margin-top: 50px;
+}
+
+.AktuellesDetail .back-button:hover {
+  background-color: var(--tanhide-focus);
+}
+
+@media screen and (min-width: 576px) {
+  .AktuellesDetail {
+    padding: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .AktuellesDetail {
     margin: 4rem auto;
+    padding: 2rem;
   }
 
-  .detail-image {
-    aspect-ratio: 16/9;
+  .AktuellesDetail .detail-image-wrapper {
+    height: 400px;
+  }
+
+  .AktuellesDetail .back-button {
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+  }
+
+  .AktuellesDetail .detail-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .AktuellesDetail .detail-image-wrapper {
+    max-width: 40%;
+    height: 300px;
+    margin-top: 0;
+  }
+
+  .AktuellesDetail .detail-content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .AktuellesDetail .detail-text {
+    font-size: 1.4rem;
+  }
+
+  .AktuellesDetail .back-button {
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+  }
+
+  .AktuellesDetail .back-button:hover {
+    background-color: var(--tanhide-focus);
+  }
+
+  .AktuellesDetail .detail-text p {
+    margin-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .AktuellesDetail {
-    width: 75%;
-    padding: 2.5rem;
+    padding: 3rem;
     margin: 5rem auto;
+    max-width: 85%;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
   }
 
-  .detail-text {
-    font-size: 1.4rem;
-    line-height: 1.75;
+  .AktuellesDetail .detail-text {
+    font-size: 1.6rem;
+    line-height: 2.1;
     color: var(--martinique);
   }
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  .AktuellesDetail h1 {
+    font-size: 2.75rem;
+    margin-bottom: 2.5rem;
   }
 
-  .date {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  .AktuellesDetail .date {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .detail-image {
-    aspect-ratio: 16/9;
-    margin-top: 2rem;
+  .AktuellesDetail .detail-image-wrapper {
+    width: 280px;
+    height: 280px;
   }
 
-  .detail-image img {
-    object-fit: cover;
-    border-radius: 8px;
-  }
-
-  .back-button {
+  .AktuellesDetail .back-button {
     font-size: 18px;
-    padding: 12px 25px;
-    border-radius: 6px;
-    margin-bottom: 30px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    margin-bottom: 50px;
   }
 
-  .back-button:hover {
+  .AktuellesDetail .back-button:hover {
     background-color: var(--tanhide-focus);
   }
 
-  .detail-text p {
-    margin-bottom: 2rem;
+  .AktuellesDetail .detail-text p {
+    margin-bottom: 2.5rem;
+    line-height: 2.1;
+  }
+
+  .AktuellesDetail .detail-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .AktuellesDetail .detail-content {
+    max-width: 68%;
   }
 }
 
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .AktuellesDetail {
-    width: 70%;
     padding: 3rem;
+    margin: 6rem auto;
+    max-width: 80%;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .detail-image {
-    aspect-ratio: 16/9; 
+  .AktuellesDetail .detail-text {
+    font-size: 1.75rem;
+    line-height: 2.2;
   }
-} */
+
+  .AktuellesDetail h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .AktuellesDetail .date {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .AktuellesDetail .detail-image-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+
+  .AktuellesDetail .back-button {
+    font-size: 20px;
+    padding: 14px 30px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+  .AktuellesDetail .back-button:hover {
+    background-color: var(--tanhide-focus);
+  }
+
+  .AktuellesDetail .detail-text p {
+    margin-bottom: 2.5rem;
+    line-height: 2.2;
+  }
+
+  .AktuellesDetail .detail-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .AktuellesDetail .detail-content {
+    max-width: 65%;
+  }
+}

@@ -20,20 +20,30 @@ const AktuellesDetail = () => {
     <div className="AktuellesDetail">
       <h1>{article.title}</h1>
       <p className="date">Veröffentlicht am: {article.date}</p>
-      <img className="detail-image" src={article.image} alt={article.title} />
-      <div className="detail-text">
-        {Array.isArray(article.content) ? (
-          article.content.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))
-        ) : (
-          <p>{article.content}</p> // Falls es nur ein String ist, einfach ausgeben
-        )}
-      </div>
-      <div>
-        <button className="back-button" onClick={() => navigate("/aktuelles")}>
-          Zurück
-        </button>
+      <div className="detail-container">
+        <div className="detail-image-wrapper">
+          <img
+            className="detail-image"
+            src={article.image}
+            alt={article.title}
+          />
+        </div>
+        <div className="detail-content">
+          {Array.isArray(article.content) ? (
+            article.content.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))
+          ) : (
+            <p>{article.content}</p>
+          )}
+          <button
+            className="back-button"
+            onClick={() => navigate("/aktuelles")}
+          >
+            <i className="fa-regular fa-square-caret-left"></i>
+            Zurück
+          </button>
+        </div>
       </div>
     </div>
   );

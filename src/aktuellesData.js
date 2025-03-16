@@ -1,5 +1,14 @@
 export default [
   {
+    id: "buerger-sprechstunde-08",
+    title: "UBL-Bürgersprechstunde mit Ute Kurig",
+    date: "17. März 2025",
+    image: "/Ute-1.png",
+    content: `
+      Die nächste Bürgersprechstunde der "Unabhängigen Bürgerliste Herzogenrath" (UBL) findet am Montag, 17. März, wie gewohnt von 17-18 Uhr statt. In dieser Zeit ist Ute Kurig telefonisch unter 02506/83125 für Fragen, Anregungen, Kritik zu kommunalpolitischen Fragen zu erreichen. TOP im "Ausschuss für Bauangelegenheiten und Gebäudemanagement" am 20. März, in dem Ute Kurig Mitglied ist,  ist u.a. die Mensasituation in der OGS-Pannesheide; speziell dazu kann sie auf Nachfrage eingehen. Ute Kurig ist als Kassiererin Mitglied im geschäftsf. Vorstand der Wäherlervereinigung UBL. Sie kann auch während der Sprechstunde im Rathaus in Raum 105 (1. Etage) persönlich aufgesucht werden.
+    `,
+  },
+  {
     id: "buerger-sprechstunde-07",
     title: "UBL - Bürgersprechstunde vor Karneval",
     date: "24. Februar 2025",

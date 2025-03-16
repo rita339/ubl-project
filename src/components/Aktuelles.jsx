@@ -14,16 +14,14 @@ export const Aktuelles = () => {
       <div className="aktuelles-wrapper">
         {aktuellesData.map((item, index) => (
           <div key={index} className="aktuelles-card">
+            {item.image && (
+              <div className="aktuelles-pic">
+                <img src={item.image} alt={item.title} />
+              </div>
+            )}
             <div className="aktuelles-content">
               <h3>{item.title}</h3>
-
               <p className="aktuelles-date">{item.date}</p>
-
-              {item.image && (
-                <div className="aktuelles-pic">
-                  <img src={item.image} alt={item.title} />
-                </div>
-              )}
               <p>
                 {Array.isArray(item.content)
                   ? item.content[0].slice(0, 150) + "..."

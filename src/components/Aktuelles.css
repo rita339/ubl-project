@@ -3,122 +3,142 @@
   margin: 3rem auto;
   width: 95%;
   padding: 1rem;
-
-  & h1 {
-    font-size: 2rem;
-    padding-left: 1rem;
-    letter-spacing: 0.02rem;
-    margin-bottom: 2.5rem;
-  }
-
-  & .aktuelles-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  & .aktuelles-card {
-    background-color: #fff;
-    box-shadow: 0px 8px 12px #091e4226, 0px 0px 1px #091e424f;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
-
-    &:hover {
-      transform: translateY(-10px);
-      box-shadow: 0px 12px 18px #091e424f;
-    }
-
-    & .aktuelles-content {
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      /* flex-grow: 1; */
-    }
-
-    & h3 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    .aktuelles-date {
-      font-size: 0.9rem;
-      color: #666;
-      margin: 5px 0;
-    }
-
-    & p {
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    & .aktuelles-link {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      text-decoration: none;
-      color: var(--martinique);
-      font-weight: bold;
-
-      &:hover {
-        color: var(--tanhide-focus);
-      }
-
-      i {
-        font-size: 1.3rem;
-        transform: rotate(270deg);
-        color: var(--tanhide);
-      }
-    }
-
-    & .aktuelles-pic {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 250px;
-      background-color: #3b3c4a;
-      margin-top: auto;
-
-      img {
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: cover;
-      }
-    }
-  }
 }
 
+.Aktuelles h1 {
+  font-size: 2rem;
+  padding-left: 1rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 2.5rem;
+}
+
+.aktuelles-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.aktuelles-card {
+  background-color: #fff;
+  box-shadow: 0px 8px 12px #091e4226, 0px 0px 1px #091e424f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.aktuelles-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 18px #091e424f;
+}
+
+.aktuelles-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.aktuelles-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.aktuelles-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.aktuelles-content p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.aktuelles-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--martinique);
+  font-weight: bold;
+}
+
+.aktuelles-link:hover {
+  color: var(--tanhide-focus);
+}
+
+.aktuelles-link i {
+  font-size: 1.3rem;
+  transform: rotate(270deg);
+  color: var(--tanhide);
+}
+
+.aktuelles-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #3b3c4a;
+}
+
+.aktuelles-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Ab 768px: Bild links, Text rechts */
 @media screen and (min-width: 768px) {
   .Aktuelles {
     margin: 4rem auto;
-    & .aktuelles-wrapper {
-      & .aktuelles-card {
-        & .aktuelles-content {
-          & .text-pic {
-            display: flex;
-            gap: 2rem;
-          }
-        }
-      }
-    }
+  }
+
+  .aktuelles-card {
+    flex-direction: row;
+
+    align-items: center;
+  }
+
+  .aktuelles-pic {
+    width: 40%;
+    height: auto;
+  }
+
+  .aktuelles-content {
+    width: 60%;
+  }
+
+  .aktuelles-pic img {
+    object-fit: contain;
   }
 }
 
+/* Ab 992px: 2 Karten nebeneinander mit Grid */
 @media screen and (min-width: 992px) {
-  .Aktuelles {
-    & .aktuelles-wrapper {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .aktuelles-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aktuelles-card {
+    flex-direction: column;
+  }
+
+  .aktuelles-pic {
+    width: 100%;
+    height: 250px;
+  }
+
+  .aktuelles-content {
+    width: 100%;
   }
 }
 
+/* Ab 1200px: 3 Karten nebeneinander */
 @media screen and (min-width: 1200px) {
-  .Aktuelles {
-    & .aktuelles-wrapper {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .aktuelles-wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

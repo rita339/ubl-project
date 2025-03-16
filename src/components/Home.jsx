@@ -53,7 +53,6 @@ export const Home = () => {
         {/* zweiter Block */}
         <div className="home-group">
           <div className="group-content">
-            {/* <div className="group-titel"> */}
             <h3>Bürgersprechstunde der UBL</h3>
             <p>
               Die nächste Bürgersprechstunde der "Unabhängigen Bürgerliste
@@ -65,7 +64,6 @@ export const Home = () => {
               deren Sprecher im "Ausschuss für Mobilität und Tiefbau"; dieser
               Ausschuss kommt am 28.11. zu seiner nächsten Sitzung zusammen.
             </p>
-            {/* </div> */}
 
             <div className="home-pic">
               <img src="./pic.jpg" alt="Fake Bild" />
